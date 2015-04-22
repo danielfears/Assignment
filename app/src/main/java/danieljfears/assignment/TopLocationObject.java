@@ -8,6 +8,7 @@ public class TopLocationObject implements Serializable {
     private String countryName;
     private Integer flagResource;
     private String mapPictureURL;
+    private String woeid;
 
     public String getCityName() {
     return cityName;
@@ -25,11 +26,16 @@ public class TopLocationObject implements Serializable {
         return mapPictureURL;
     }
 
-    public TopLocationObject(String cityName, String countryName, Integer flagResource, String mapPictureURL) {
+    public String getWoeid() {
+        return woeid;
+    }
+
+    public TopLocationObject(String cityName, String countryName, Integer flagResource, String mapPictureURL, String woeid) {
         this.cityName = cityName;
         this.countryName = countryName;
         this.flagResource = flagResource;
         this.mapPictureURL = mapPictureURL;
+        this.woeid = woeid;
     }
 
 

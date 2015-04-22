@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -31,16 +29,16 @@ public class LocationsActivity extends ActionBarActivity {
         ListLocations = (ListView)findViewById(R.id.ListLocations);
         topLocations = new ArrayList<TopLocationObject>();
 
-        topLocations.add(new TopLocationObject("London", "England", R.drawable.england, "http://upload.wikimedia.org/wikipedia/commons/3/3a/London_from_a_hot_air_balloon.jpg"));
-        topLocations.add(new TopLocationObject("Paris", "France", R.drawable.france, "http://www.impots-locaux.net/wp-content/uploads/2014/04/paris-aide-de-l-etat.jpg"));
-        topLocations.add(new TopLocationObject("Berlin", "Germany", R.drawable.germany, "http://upload.wikimedia.org/wikipedia/commons/5/53/%C3%9Cber_den_D%C3%A4chern_von_Berlin.jpg"));
-        topLocations.add(new TopLocationObject("Madrid", "Spain", R.drawable.spain, "http://upload.wikimedia.org/wikipedia/commons/f/f3/Palacio_de_Comunicaciones_-_07.jpg"));
-        topLocations.add(new TopLocationObject("Rome", "Italy", R.drawable.italy, "http://static1.squarespace.com/static/542ad2d5e4b0621639b1d3b4/t/543570d2e4b0d35b2d7fa10d/1412788435472/rome-italy.jpg?format=1500w"));
-        topLocations.add(new TopLocationObject("Dublin", "Ireland", R.drawable.ireland, "http://streetmedicine.org/wordpress/wp-content/uploads/2014/05/Dublin-OConnell-Street-bridge-at-night.jpg"));
-        topLocations.add(new TopLocationObject("Brussels", "Belgium", R.drawable.belgium, "http://www.brussels.info/grand-place-brussels.jpg"));
-        topLocations.add(new TopLocationObject("Copenhagen", "Denmark", R.drawable.denmark, "http://static1.squarespace.com/static/53714acce4b0bb13e3c90e93/t/547dfa34e4b0e1f3b2412f0b/1417542200686/international-moving-to-denmark.jpg?format=1500w"));
-        topLocations.add(new TopLocationObject("Athens", "Greece", R.drawable.greece, "http://upload.wikimedia.org/wikipedia/commons/9/91/View_of_the_Acropolis_Athens_(pixinn.net).jpg"));
-        topLocations.add(new TopLocationObject("Amsterdam", "Netherlands", R.drawable.netherlands, "https://www.augustana.edu/Images/Amsterdam_Netherlands_031.jpg"));
+        topLocations.add(new TopLocationObject("London", "England", R.drawable.england, "http://upload.wikimedia.org/wikipedia/commons/3/3a/London_from_a_hot_air_balloon.jpg", "44418"));
+        topLocations.add(new TopLocationObject("Paris", "France", R.drawable.france, "http://www.impots-locaux.net/wp-content/uploads/2014/04/paris-aide-de-l-etat.jpg", "615702"));
+        topLocations.add(new TopLocationObject("Berlin", "Germany", R.drawable.germany, "http://upload.wikimedia.org/wikipedia/commons/5/53/%C3%9Cber_den_D%C3%A4chern_von_Berlin.jpg", "638242"));
+        topLocations.add(new TopLocationObject("Madrid", "Spain", R.drawable.spain, "http://upload.wikimedia.org/wikipedia/commons/f/f3/Palacio_de_Comunicaciones_-_07.jpg", "766273"));
+        topLocations.add(new TopLocationObject("Rome", "Italy", R.drawable.italy, "http://static1.squarespace.com/static/542ad2d5e4b0621639b1d3b4/t/543570d2e4b0d35b2d7fa10d/1412788435472/rome-italy.jpg?format=1500w", "721943"));
+        topLocations.add(new TopLocationObject("Dublin", "Ireland", R.drawable.ireland, "http://streetmedicine.org/wordpress/wp-content/uploads/2014/05/Dublin-OConnell-Street-bridge-at-night.jpg", "560743"));
+        topLocations.add(new TopLocationObject("Brussels", "Belgium", R.drawable.belgium, "http://www.brussels.info/grand-place-brussels.jpg", "968019"));
+        topLocations.add(new TopLocationObject("Copenhagen", "Denmark", R.drawable.denmark, "http://static1.squarespace.com/static/53714acce4b0bb13e3c90e93/t/547dfa34e4b0e1f3b2412f0b/1417542200686/international-moving-to-denmark.jpg?format=1500w", "554890"));
+        topLocations.add(new TopLocationObject("Athens", "Greece", R.drawable.greece, "http://upload.wikimedia.org/wikipedia/commons/9/91/View_of_the_Acropolis_Athens_(pixinn.net).jpg", "946738"));
+        topLocations.add(new TopLocationObject("Amsterdam", "Netherlands", R.drawable.netherlands, "https://www.augustana.edu/Images/Amsterdam_Netherlands_031.jpg", "727232"));
 
         //set up the adapter
         LocationAdapter adapter = new LocationAdapter(topLocations);
