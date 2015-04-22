@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcdcdcd">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imgBanner"
+        android:src="@drawable/bluebanner2"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/imgAndroidLogo"
+        android:src="@drawable/android_logo"
+        android:layout_marginLeft="200dp"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/imgMe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/me"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgCat"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/cat"
+        android:layout_below="@+id/imgBanner"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="Daniel Fears"
+        android:textSize="30dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="170dp"/>
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="danieljfears"
+        android:textSize="20dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="265dp"/>
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:text="Bath, UK"
+        android:textSize="20dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="340dp"/>
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="10th August"
+        android:textSize="20dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="415dp"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="www.djfears.co.uk"
+        android:textSize="20dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="490dp"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgGPS"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/gps"
+        android:layout_below="@+id/imgCat"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgCake"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/cake"
+        android:layout_below="@+id/imgGPS"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgPlanet"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/planet"
+        android:layout_below="@+id/imgCake"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"/>
+
+</RelativeLayout>
