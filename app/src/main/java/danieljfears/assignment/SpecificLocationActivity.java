@@ -38,25 +38,22 @@ public class SpecificLocationActivity extends ActionBarActivity {
         lblLocationTitle = (TextView)findViewById(R.id.lblLocationTitle);
         lblCountryTitle = (TextView)findViewById(R.id.lblCountryTitle);
         imgFlag = (ImageView)findViewById(R.id.imgFlag);
+        gridView = (GridView)findViewById(R.id.gridview);
 
         lblLocationTitle.setText(location.getCityName());
         lblCountryTitle.setText(location.getCountryName());
         imgFlag.setImageResource(location.getFlagResource());
 
-        ImageView imgPhoto = (ImageView)findViewById(R.id.imgPhoto);
-
-        Picasso.with(SpecificLocationActivity.this).load(location.getMapPictureURL()).into(imgPhoto);
-
         photos = new ArrayList<>();
 
-        photos.add("https://i.imgur.com/ZczFK.png");
-        photos.add("https://i.imgur.com/ZczFK.png");
-        photos.add("https://i.imgur.com/ZczFK.png");
-        photos.add("https://i.imgur.com/ZczFK.png");
-        photos.add("https://i.imgur.com/ZczFK.png");
-        photos.add("https://i.imgur.com/ZczFK.png");
-        photos.add("https://i.imgur.com/ZczFK.png");
-        photos.add("https://i.imgur.com/ZczFK.png");
+        photos.add("http://i.imgur.com/DvpvklR.png");
+        photos.add("https://i.imgur.com/DvpvklR.png");
+        photos.add("https://i.imgur.com/DvpvklR.png");
+        photos.add("https://i.imgur.com/DvpvklR.png");
+        photos.add("https://i.imgur.com/DvpvklR.png");
+        photos.add("https://i.imgur.com/DvpvklR.png");
+        photos.add("https://i.imgur.com/DvpvklR.png");
+        photos.add("https://i.imgur.com/DvpvklR.png");
 
         PhotoAdapter adapter = new PhotoAdapter(SpecificLocationActivity.this);
         gridView.setAdapter(adapter);
