@@ -27,7 +27,7 @@ public class FlickrResponse {
 
             public String getImageURL() {return getImageURL();}
 
-            }
+
         }
     }
 
