@@ -27,6 +27,7 @@ public class SpecificLocationActivity extends ActionBarActivity {
     private TextView lblLocationTitle;
     private TextView lblCountryTitle;
     private ImageView imgFlag;
+    private ImageView imgPhoto;
     private TopLocationObject location;
 
     private GridView gridView;
@@ -42,11 +43,14 @@ public class SpecificLocationActivity extends ActionBarActivity {
         lblLocationTitle = (TextView)findViewById(R.id.lblLocationTitle);
         lblCountryTitle = (TextView)findViewById(R.id.lblCountryTitle);
         imgFlag = (ImageView)findViewById(R.id.imgFlag);
+        imgPhoto = (ImageView) findViewById(R.id.imgPhoto);
         gridView = (GridView)findViewById(R.id.gridview);
 
         lblLocationTitle.setText(location.getCityName());
         lblCountryTitle.setText(location.getCountryName());
         imgFlag.setImageResource(location.getFlagResource());
+
+        Picasso.with(SpecificLocationActivity.this).load(location.getMapPictureURL()).into(imgPhoto);
 
         getDataFromFlickr();
 

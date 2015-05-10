@@ -29,16 +29,16 @@ public class LocationsActivity extends ActionBarActivity {
         ListLocations = (ListView)findViewById(R.id.ListLocations);
         topLocations = new ArrayList<TopLocationObject>();
 
-        topLocations.add(new TopLocationObject("London", "England", R.drawable.england, "http://upload.wikimedia.org/wikipedia/commons/3/3a/London_from_a_hot_air_balloon.jpg", "44418"));
-        topLocations.add(new TopLocationObject("Paris", "France", R.drawable.france, "http://www.impots-locaux.net/wp-content/uploads/2014/04/paris-aide-de-l-etat.jpg", "615702"));
-        topLocations.add(new TopLocationObject("Berlin", "Germany", R.drawable.germany, "http://upload.wikimedia.org/wikipedia/commons/5/53/%C3%9Cber_den_D%C3%A4chern_von_Berlin.jpg", "638242"));
-        topLocations.add(new TopLocationObject("Madrid", "Spain", R.drawable.spain, "http://upload.wikimedia.org/wikipedia/commons/f/f3/Palacio_de_Comunicaciones_-_07.jpg", "766273"));
-        topLocations.add(new TopLocationObject("Rome", "Italy", R.drawable.italy, "http://static1.squarespace.com/static/542ad2d5e4b0621639b1d3b4/t/543570d2e4b0d35b2d7fa10d/1412788435472/rome-italy.jpg?format=1500w", "721943"));
-        topLocations.add(new TopLocationObject("Dublin", "Ireland", R.drawable.ireland, "http://streetmedicine.org/wordpress/wp-content/uploads/2014/05/Dublin-OConnell-Street-bridge-at-night.jpg", "560743"));
-        topLocations.add(new TopLocationObject("Brussels", "Belgium", R.drawable.belgium, "http://www.brussels.info/grand-place-brussels.jpg", "968019"));
-        topLocations.add(new TopLocationObject("Copenhagen", "Denmark", R.drawable.denmark, "http://static1.squarespace.com/static/53714acce4b0bb13e3c90e93/t/547dfa34e4b0e1f3b2412f0b/1417542200686/international-moving-to-denmark.jpg?format=1500w", "554890"));
+        topLocations.add(new TopLocationObject("London", "England", R.drawable.england, "http://i.telegraph.co.uk/multimedia/archive/02423/london_2423609k.jpg", "44418"));
+        topLocations.add(new TopLocationObject("Paris", "France", R.drawable.france, "http://www.telegraph.co.uk/travel/destination/article130148.ece/ALTERNATES/w620/parisguidetower.jpg", "615702"));
+        topLocations.add(new TopLocationObject("Berlin", "Germany", R.drawable.germany, "http://www.telegraph.co.uk/travel/destination/article128328.ece/ALTERNATES/w620/berlin.jpg", "638242"));
+        topLocations.add(new TopLocationObject("Madrid", "Spain", R.drawable.spain, "http://i.telegraph.co.uk/multimedia/archive/02509/madrid_2509809b.jpg", "766273"));
+        topLocations.add(new TopLocationObject("Rome", "Italy", R.drawable.italy, "http://www.telegraph.co.uk/incoming/article33812.ece/ALTERNATES/w620/Fontana_di_Trevi.jpg", "721943"));
+        topLocations.add(new TopLocationObject("Dublin", "Ireland", R.drawable.ireland, "http://cdni.condenast.co.uk/646x430/d_f/dublin_cnt_24nov09_iStock_b.jpg", "560743"));
+        topLocations.add(new TopLocationObject("Brussels", "Belgium", R.drawable.belgium, "http://media-cdn.tripadvisor.com/media/photo-s/03/9b/2f/53/brussels.jpg", "968019"));
+        topLocations.add(new TopLocationObject("Canberra", "Australia", R.drawable.australia, "http://international.cit.edu.au/__data/assets/image/0006/27636/Canberra-Aerial-view-of-lake.jpg", "1100968"));
         topLocations.add(new TopLocationObject("Athens", "Greece", R.drawable.greece, "http://upload.wikimedia.org/wikipedia/commons/9/91/View_of_the_Acropolis_Athens_(pixinn.net).jpg", "946738"));
-        topLocations.add(new TopLocationObject("Amsterdam", "Netherlands", R.drawable.netherlands, "https://www.augustana.edu/Images/Amsterdam_Netherlands_031.jpg", "727232"));
+        topLocations.add(new TopLocationObject("Cairo", "Egypt", R.drawable.egypt, "http://www.egyptunlimitedtours.com/Islamic%20Old%20Cairo.jpg", "1521894"));
 
         //set up the adapter
         LocationAdapter adapter = new LocationAdapter(topLocations);
