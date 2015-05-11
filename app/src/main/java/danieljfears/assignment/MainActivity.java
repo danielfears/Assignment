@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         btnLocations = (Button)findViewById(R.id.btnLocations);
-        btnSearch = (Button)findViewById(R.id.btnSearch);
+//        btnSearch = (Button)findViewById(R.id.btnSearch);
 
 
         btnLocations.setOnClickListener( new View.OnClickListener() {
@@ -32,13 +32,13 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        btnSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, SearchActivity.class);
-                startActivity(i);
-                Log.d("FLICKR_APP", "pushed button");
-            }
-        });
+//        btnSearch.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(MainActivity.this, SearchActivity.class);
+//                startActivity(i);
+//                Log.d("FLICKR_APP", "pushed button");
+//            }
+//        });
     }
 }
