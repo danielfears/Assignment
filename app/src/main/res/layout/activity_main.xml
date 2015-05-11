@@ -20,16 +20,14 @@
             android:layout_marginLeft="200dp"
             android:textColor="#fff"/>
 
-
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="340dp"
         android:background="@drawable/bg"
         android:layout_below="@+id/topbar"
         android:id="@+id/picture">
-
     </RelativeLayout>
 
     <RelativeLayout
@@ -38,29 +36,42 @@
         android:id="@+id/buttons"
         android:layout_below="@+id/picture">
 
-
         <Button
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
             android:id="@+id/btnLocations"
-            android:background="@drawable/travelbutton" />
+            android:background="@drawable/travelbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7.5dp"
+            />
 
         <Button
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
             android:id="@+id/btnProfile"
             android:background="@drawable/profilebutton"
-            android:layout_toRightOf="@+id/btnLocations"/>
+            android:layout_toRightOf="@+id/btnLocations"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#5677fc"
+            android:layout_below="@+id/btnProfile"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnProfile"
+            android:layout_marginTop="7.5dp"
+            android:text="Made by Daniel Fears ©"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Created by Daniel Fears"
-        android:id="@+id/textView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="80dp"

@@ -30,6 +30,10 @@
             android:name=".SpecificLocationActivity"
             android:label="@string/title_activity_specific_location" >
         </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile_activity" >
+        </activity>
     </application>
 
 </manifest>
